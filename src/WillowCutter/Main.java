@@ -14,9 +14,9 @@ import java.awt.*;
 
 @ScriptManifest(
         author = "PASH",
-        description = "Willow Trees",
+        description = "Willow Trees with antiban",
         category = Category.WOODCUTTING,
-        version = 2.0,
+        version = 3.0,
         name = "PASH"
 )
 
@@ -34,9 +34,21 @@ public class Main extends AbstractScript {
     @Override
     public int onLoop(){
         GameObject tree = getGameObjects().closest(gameObject -> gameObject != null && gameObject.getName().equals("Willow"));
+        getMouse().move(new Point(Calculations.random(0, 765), Calculations.random(0, 503))); //antiban
+        log("ANTIBAN: moving mouse to random area");
         if(!getInventory().isFull()) {
             if(treeArea.contains(getLocalPlayer())) {
-                if(tree != null && tree.interact("Chop down")) {
+                if (Calculations.random(0, 20) == 7) {//antiban
+                    getCamera().rotateToEntity(getGameObjects().all(gameObject -> gameObject != null && gameObject.getName().equals("Willow")).get(1));
+                    log("ANTIBAN: turned camera to another entity");
+
+                    log("ANTIBAN: running to another area");
+                    Area nearbyArea = new Area (2959 + Calculations.random(-3, 3), 3199 + (Calculations.random(-3, 4)), 2973 + (Calculations.random(-4, 3)), 3191 + (Calculations.random(-4, 4)), 0);
+                    if(getWalking().walk(nearbyArea.getRandomTile())) {
+                        sleep(Calculations.random(3000, 10000));
+                    }
+                } else if (tree != null && tree.interact("Chop down")) {
+                    getMouse().move(new Point(Calculations.random(0, 765), Calculations.random(0, 503))); //antiban
                     int countLog = getInventory().count("Willow logs");
                     sleepUntil(() -> getInventory().count("Willow logs") > countLog, Calculations.random(12000, 16000));
                 }
@@ -49,6 +61,8 @@ public class Main extends AbstractScript {
         if(getInventory().isFull()) {
             if(storeArea.contains(getLocalPlayer())) {
                 log("Player in store area");
+                getMouse().move(new Point(Calculations.random(0, 765), Calculations.random(0, 503))); //antiban
+                log("ANTIBAN: moving mouse to random area");
                 NPC shop = getNpcs().closest("Shop assistant");
                 if(shop != null && shop.isOnScreen()){
                     shop.interact("Trade");
