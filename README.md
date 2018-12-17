@@ -1,5 +1,5 @@
 # Runescape bots built using Dreambot client APIs.
-To run any of these bots, please make sure you have the latest version of the Dreambot client running.
+To run any of these bots, please make sure you have the latest version of the [Dreambot](https://dreambot.org/) client running.
 If you're new to RS Botting or have any suggestions, feel free to tweet me [@pashmerepat](https://twitter.com/pashmerepat)
 
 ## [Oak Cutting](https://github.com/pashpashpash/RunescapeBots/tree/master/src/OakCutter) Bot
