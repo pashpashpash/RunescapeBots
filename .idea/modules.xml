@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SomeScript.iml" filepath="$PROJECT_DIR$/SomeScript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RunescapeBots.iml" filepath="$PROJECT_DIR$/RunescapeBots.iml" />
     </modules>
   </component>
 </project>

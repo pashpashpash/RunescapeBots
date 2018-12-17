@@ -1,3 +1,5 @@
+package OakCutter;
+
 import org.dreambot.api.methods.Calculations;
 import org.dreambot.api.methods.filter.Filter;
 import org.dreambot.api.methods.map.Area;
@@ -13,7 +15,7 @@ import java.awt.*;
         author = "PASH",
         description = "Oak Trees",
         category = Category.WOODCUTTING,
-        version = 1.0,
+        version = 1.5,
         name = "PASH"
 )
 public class Main extends AbstractScript {
