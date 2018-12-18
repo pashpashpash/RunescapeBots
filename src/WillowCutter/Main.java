@@ -2,21 +2,22 @@ package WillowCutter;
 import org.dreambot.api.methods.Calculations;
 import org.dreambot.api.methods.filter.Filter;
 import org.dreambot.api.methods.map.Area;
+import org.dreambot.api.methods.skills.Skill;
 import org.dreambot.api.script.AbstractScript;
 import org.dreambot.api.script.Category;
 import org.dreambot.api.wrappers.interactive.GameObject;
 import org.dreambot.api.script.ScriptManifest;
 import org.dreambot.api.wrappers.interactive.NPC;
 import org.dreambot.api.methods.container.impl.Shop;
-
+import org.dreambot.api.methods.tabs.Tabs;
 
 import java.awt.*;
 
 @ScriptManifest(
         author = "PASH",
-        description = "Willow Trees with antiban",
+        description = "Willow Trees with Antiban",
         category = Category.WOODCUTTING,
-        version = 3.0,
+        version = 4.0,
         name = "PASH"
 )
 
@@ -29,10 +30,39 @@ public class Main extends AbstractScript {
     @Override
     public void onStart(){
         log("hi");
+        getSkills().open();
+        sleep(Calculations.random(1000, 2000));
+        getSkills().hoverSkill(Skill.WOODCUTTING);
+        log("ANTIBAN: hovered over skill.");
+        sleep(Calculations.random(1000, 4000));
+        if (!getTabs().isOpen(org.dreambot.api.methods.tabs.Tab.INVENTORY)) {
+            getTabs().openWithMouse(org.dreambot.api.methods.tabs.Tab.INVENTORY);
+            sleep(Calculations.random(1000, 1500));
+            log("ANTIBAN: Set tab to inventory.");
+        }
     }
 
     @Override
     public int onLoop(){
+        if(Calculations.random(0,20) == 14) {
+            if(!getWalking().isRunEnabled() && getWalking().getRunEnergy() > 30) {
+                getWalking().toggleRun();
+            }
+            if(Calculations.random(0,10) == 7 && getTabs().isOpen(org.dreambot.api.methods.tabs.Tab.INVENTORY)) {
+                getSkills().open();
+                sleep(Calculations.random(1000, 2000));
+                getSkills().hoverSkill(Skill.WOODCUTTING);
+                log("ANTIBAN: hovered over skill.");
+                sleep(Calculations.random(1000, 4000));
+                if (!getTabs().isOpen(org.dreambot.api.methods.tabs.Tab.INVENTORY)) {
+                    getTabs().openWithMouse(org.dreambot.api.methods.tabs.Tab.INVENTORY);
+                    sleep(Calculations.random(1000, 1500));
+                    log("ANTIBAN: Set tab to inventory.");
+                }
+            }
+        }
+
+
         GameObject tree = getGameObjects().closest(gameObject -> gameObject != null && gameObject.getName().equals("Willow"));
         getMouse().move(new Point(Calculations.random(0, 765), Calculations.random(0, 503))); //antiban
         log("ANTIBAN: moving mouse to random area");
@@ -81,7 +111,7 @@ public class Main extends AbstractScript {
             }
             else {
                 if(getWalking().walk(storeArea.getRandomTile())) {
-                    sleep(Calculations.random(7000, 15000));
+                    sleep(Calculations.random(4000, 8000));
                 }
             }
         }
