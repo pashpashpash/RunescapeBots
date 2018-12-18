@@ -5,7 +5,7 @@ If you're new to RS Botting or have any suggestions, feel free to tweet me [@pas
 ## [Oak Cutting](https://github.com/pashpashpash/RunescapeBots/tree/master/src/OakCutter) Bot
 Cuts Oak trees near Draynor Village and deposits them to the bank nearby.
 
-##  [Willow Cutting](https://github.com/pashpashpash/RunescapeBots/tree/master/src/OakCutter) Bot
+##  [Willow Cutting](https://github.com/pashpashpash/RunescapeBots/tree/master/src/WillowCutter) Bot
 Cuts Willow trees south of Rimmington and sells them to the general store nearby.
 
 ![ ](/WillowCutter.PNG)

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e986c0a8-c870-4a08-9808-53da8ecfd84a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WillowCutter/Main.java" afterPath="$PROJECT_DIR$/src/WillowCutter/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -392,12 +392,12 @@
       <option name="presentableId" value="Default" />
       <updated>1545024863787</updated>
       <workItem from="1545024874193" duration="7621000" />
-      <workItem from="1545074215796" duration="6573000" />
+      <workItem from="1545074215796" duration="6993000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14194000" />
+    <option name="totallyTimeSpent" value="14614000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1436" height="877" extended-state="0" />
