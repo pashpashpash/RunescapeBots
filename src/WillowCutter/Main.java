@@ -17,10 +17,9 @@ import java.awt.*;
         author = "PASH",
         description = "Willow Trees with Antiban",
         category = Category.WOODCUTTING,
-        version = 4.0,
-        name = "PASH"
+        version = 1.0,
+        name = "[PASH] WillowCutter + Antiban"
 )
-
 
 
 public class Main extends AbstractScript {
@@ -38,7 +37,7 @@ public class Main extends AbstractScript {
         if (!getTabs().isOpen(org.dreambot.api.methods.tabs.Tab.INVENTORY)) {
             getTabs().openWithMouse(org.dreambot.api.methods.tabs.Tab.INVENTORY);
             sleep(Calculations.random(1000, 1500));
-            log("ANTIBAN: Set tab to inventory.");
+            log("ANTIBAN: Set tab  to inventory.");
         }
     }
 

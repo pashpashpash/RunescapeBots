@@ -2,7 +2,7 @@
   <artifact type="jar" build-on-make="true" name="SomeScript">
     <output-path>$USER_HOME$/DreamBot/Scripts</output-path>
     <root id="archive" name="SomeScript.jar">
-      <element id="library" level="project" name="client" />
+      <element id="module-output" name="SomeScript" />
     </root>
   </artifact>
 </component>

@@ -14,11 +14,12 @@ import java.awt.*;
 
 @ScriptManifest(
         author = "PASH",
-        description = "Yew Trees",
+        description = "Yew Trees with Antiban",
         category = Category.WOODCUTTING,
         version = 1.0,
-        name = "PASH"
+        name = "[PASH] YewCutter + Antiban"
 )
+
 public class Main extends AbstractScript {
     Area bankArea = new Area(3185, 3445, 3181, 3435, 0);
     Area treeArea = new Area(3203, 3506, 3223, 3498, 0);

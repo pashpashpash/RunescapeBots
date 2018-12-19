@@ -13,12 +13,13 @@ import org.dreambot.api.methods.tabs.Tabs;
 import java.awt.*;
 
 @ScriptManifest(
-        author = "PASH",
-        description = "Oak Trees",
+        author = "P A S H",
+        description = "Oak Trees with Antiban",
         category = Category.WOODCUTTING,
-        version = 1.5,
-        name = "PASH"
+        version = 1.0,
+        name = "[PASH] OakCutter + Antiban"
 )
+
 public class Main extends AbstractScript {
 
 
