@@ -63,8 +63,8 @@ public class Main extends AbstractScript {
         if(!getInventory().isFull()) {
             if(treeArea.contains(getLocalPlayer())) {
                 if (Calculations.random(0, 20) == 7) {//antiban
-                    getCamera().rotateToEntity(getGameObjects().all(gameObject -> gameObject != null && gameObject.getName().equals("Yew")).get(1));
-                    log("ANTIBAN: turned camera to another entity");
+//                    getCamera().rotateToEntity(getGameObjects().all(gameObject -> gameObject != null && gameObject.getName().equals("Yew")).get(1));
+//                    log("ANTIBAN: turned camera to another entity");
 
                     log("ANTIBAN: running to another area");
                     Area nearbyArea = new Area (3203 + Calculations.random(-3, 3), 3506 + (Calculations.random(-3, 4)), 3223 + (Calculations.random(-4, 3)), 3498 + (Calculations.random(-4, 4)), 0);
