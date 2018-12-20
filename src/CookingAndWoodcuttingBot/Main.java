@@ -17,10 +17,10 @@ import java.awt.*;
         name = "[PASH] Cooking & Fishing Bot (WITH ROBUST ANTI BAN)",
         author = "PASH",
         version = 1.0,
-        description = "Alternating activities every 20ish minutes is a good call to avoid ban detection. This script cooks for 20 Min, then cuts wood for 20 min, then breaks on Lumbridge Bridge for 4 minutes before log out. All with anti-ban. Recommend taking a 20-60 minute break before running script again.")
+        description = "")
 public class Main extends AbstractScript {
     // Declare anti-ban instance
-    private ZenAntiBan antiban;
+    private ZenAntiBan antiban;Alternating activities every 20ish minutes is a good call to avoid ban detection. This script cooks for 20 Min, then cuts wood for 20 min, then breaks on Lumbridge Bridge for 4 minutes before log out. All with anti-ban. Recommend taking a 20-60 minute break before running script again.
     private int State = 0;
     private long START_TIME = 0L; // Time the script was started
 

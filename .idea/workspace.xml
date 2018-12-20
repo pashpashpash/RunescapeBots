@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e986c0a8-c870-4a08-9808-53da8ecfd84a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AntibanTemplate/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AntibanTemplate/ZenAntiBan.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CookingAndWoodcuttingBot/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CookingAndWoodcuttingBot/ZenAntiBan.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SomeScript/OakCutter/Main.class" afterPath="$PROJECT_DIR$/out/production/SomeScript/OakCutter/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OakCutter/Main.java" afterPath="$PROJECT_DIR$/src/OakCutter/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WillowCutter/Main.java" afterPath="$PROJECT_DIR$/src/WillowCutter/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CookingAndWoodcuttingBot/Main.java" afterPath="$PROJECT_DIR$/src/CookingAndWoodcuttingBot/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +17,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CookingAndWoodcuttingBot/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="19" column="309" lean-forward="false" selection-start-line="19" selection-start-column="309" selection-end-line="19" selection-end-column="309" />
+            <state relative-caret-position="210">
+              <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="317" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -523,12 +516,12 @@
       <workItem from="1545183928471" duration="1603000" />
       <workItem from="1545185769836" duration="480000" />
       <workItem from="1545187587892" duration="2487000" />
-      <workItem from="1545198356290" duration="12294000" />
+      <workItem from="1545198356290" duration="12369000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35677000" />
+    <option name="totallyTimeSpent" value="35752000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1436" height="877" extended-state="0" />
@@ -742,8 +735,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CookingAndWoodcuttingBot/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" column="309" lean-forward="false" selection-start-line="19" selection-start-column="309" selection-end-line="19" selection-end-column="309" />
+        <state relative-caret-position="210">
+          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="317" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
