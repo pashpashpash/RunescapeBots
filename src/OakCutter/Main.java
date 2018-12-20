@@ -61,6 +61,7 @@ public class Main extends AbstractScript {
                     log("ANTIBAN: moving mouse to random area");
                     int countLog = getInventory().count("Logs");
                     sleepUntil(() -> getInventory().count("Logs") > countLog, 12000);
+                    sleep(Calculations.random(200, 1500));
                 }
             } else {
                 if(getWalking().walk(treeArea.getRandomTile())) {

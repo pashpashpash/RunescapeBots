@@ -1,6 +1,7 @@
 package WillowCutter;
+
+//import org.dreambot.api.methods.filter.Filter;
 import org.dreambot.api.methods.Calculations;
-import org.dreambot.api.methods.filter.Filter;
 import org.dreambot.api.methods.map.Area;
 import org.dreambot.api.methods.skills.Skill;
 import org.dreambot.api.script.AbstractScript;
@@ -8,8 +9,8 @@ import org.dreambot.api.script.Category;
 import org.dreambot.api.wrappers.interactive.GameObject;
 import org.dreambot.api.script.ScriptManifest;
 import org.dreambot.api.wrappers.interactive.NPC;
-import org.dreambot.api.methods.container.impl.Shop;
-import org.dreambot.api.methods.tabs.Tabs;
+//import org.dreambot.api.methods.container.impl.Shop;
+//import org.dreambot.api.methods.tabs.Tabs;
 
 import java.awt.*;
 
@@ -96,7 +97,7 @@ public class Main extends AbstractScript {
                 if(shop != null && shop.isOnScreen()){
                     shop.interact("Trade");
                     sleepUntil(() -> getShop().isOpen(), Calculations.random(2000, 5500));
-                    if(getShop().isOpen﻿()) {
+                    if(getShop().isOpen()) {
                         log("Shop opened!!");
                         getShop().sellFifty(1519);
                         log("sold");
