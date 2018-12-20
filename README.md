@@ -16,5 +16,5 @@ Cuts Yews next to the Grand Exchange.
 
 WARNING : After exploit-test-botting for 24 hours straight, I got banned while using the YewCutting script. Use at your own risk.
 
-## [CookingAndWoodcutting](https://github.com/pashpashpash/RunescapeBots/tree/master/src/CookingAndWoodcuttingBot) Bot
-Alternating activities every 20ish minutes is a good call to avoid ban detection. This script cooks for 20 Min, then cuts wood for 20 min, then breaks on Lumbridge Bridge for 4 minutes before log out. All with anti-ban. Recommend taking a 20-60 minute break before running script again.
+## [Fishing & Woodcutting](https://github.com/pashpashpash/RunescapeBots/tree/master/src/CookingAndWoodcuttingBot) Bot
+Alternating activities every 20ish minutes is a good call to avoid ban detection. This script fishes for 20ish min, then cuts wood for 20ish min, then breaks on Lumbridge Bridge for 4ish minutes before log out. All with anti-ban & anti-mod. Recommend taking a 20-60 minute break before running script again.
