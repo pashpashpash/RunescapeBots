@@ -102,7 +102,7 @@ public class Main extends AbstractScript {
 
     public void woodCuttingTime() {
         long NOW_TIME = System.currentTimeMillis(); //sets nowTime
-        if(NOW_TIME - START_TIME >= 2442000 + Calculations.random(-12000, 11111)) { //We've been woodcutting for longer than 18.7ish mins
+        if(NOW_TIME - START_TIME >= 2442000 + Calculations.random(-12000, 11111)) { //We've been woodcutting for longer than 20.7ish mins
             finishWoodCutting();
         } else {
             doWoodCutting();
@@ -110,7 +110,7 @@ public class Main extends AbstractScript {
     }
     public void hangoutTime(){
         long NOW_TIME = System.currentTimeMillis(); //sets nowTime
-        if(NOW_TIME - START_TIME >= 1320000 + 2442000 + 240000 + Calculations.random(-1000, 1000)) { //We've been standing in lumby for longer than 2 mins
+        if(NOW_TIME - START_TIME >= 2748000 + Calculations.random(-1000, 1000)) { //We've been standing in lumby for longer than 4 mins = 2748000 + Calculations.random(-1000, 1000)
             getTabs().logout(); //might want to change this to switch worlds instead..
             State = 3; //update state
         } else {
