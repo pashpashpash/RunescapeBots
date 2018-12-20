@@ -17,30 +17,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CookingAndWoodcuttingBot/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="112" column="145" lean-forward="false" selection-start-line="112" selection-start-column="145" selection-end-line="112" selection-end-column="145" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ZenAntiBan.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CookingAndWoodcuttingBot/ZenAntiBan.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="34" column="101" lean-forward="false" selection-start-line="34" selection-start-column="101" selection-end-line="34" selection-end-column="101" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WillowCutter/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="56" />
+            <state relative-caret-position="213">
+              <caret line="28" column="52" lean-forward="false" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,13 +45,22 @@
       <find>Raw shrimp</find>
       <find>Runnin</find>
       <find>moving m</find>
-      <find>hitpo</find>
       <find>Sold log</find>
       <find>Sold logs</find>
       <find>doFishin</find>
       <find>&quot;Willow logs&quot;</find>
       <find>sellFif</find>
       <find>state</find>
+      <find>State</find>
+      <find>Tree</find>
+      <find>Logs</find>
+      <find>Raw shri</find>
+      <find>Net</find>
+      <find>345</find>
+      <find>herring</find>
+      <find>152</find>
+      <find>hitpo</find>
+      <find>onExi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -517,12 +504,12 @@
       <workItem from="1545183928471" duration="1603000" />
       <workItem from="1545185769836" duration="480000" />
       <workItem from="1545187587892" duration="2487000" />
-      <workItem from="1545198356290" duration="13794000" />
+      <workItem from="1545198356290" duration="18412000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37177000" />
+    <option name="totallyTimeSpent" value="41795000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1436" height="877" extended-state="0" />
@@ -530,11 +517,11 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.48607242" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.48328692" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.5139276" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.5167131" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -728,7 +715,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CookingAndWoodcuttingBot/ZenAntiBan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
+        <state relative-caret-position="152">
           <caret line="34" column="101" lean-forward="false" selection-start-line="34" selection-start-column="101" selection-end-line="34" selection-end-column="101" />
           <folding />
         </state>
@@ -736,8 +723,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CookingAndWoodcuttingBot/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="112" column="145" lean-forward="false" selection-start-line="112" selection-start-column="145" selection-end-line="112" selection-end-column="145" />
+        <state relative-caret-position="213">
+          <caret line="28" column="52" lean-forward="false" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

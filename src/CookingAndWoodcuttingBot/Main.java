@@ -26,12 +26,14 @@ public class Main extends AbstractScript {
 
     //Fishing areas
     Area fishingStoreArea = new Area(2947, 3217, 2949, 3214, 0);
-    Area fishingSpotArea = new Area(2990, 3178, 2997, 3145, 0);
+    Area fishingSpotArea = new Area(2997, 3159, 2993, 3145, 0);
 
 
     //Woodcutting areas
     Area woodCuttingStoreArea = new Area(2947, 3217, 2949, 3214, 0);
-    Area woodCuttingTreeArea = new Area(2959, 3199, 2973, 3191, 0);
+    Area woodCuttingTreeArea_Oaks = new Area(2977, 3207, 2989, 3200, 0);
+    Area woodCuttingTreeArea_Trees = new Area(2959, 3199, 2973, 3191, 0);
+
 
     //Hangout area
     Area hangoutArea = new Area(3243, 3226, 3247, 3225, 0);
@@ -78,7 +80,11 @@ public class Main extends AbstractScript {
             hangoutTime();
         } else if (State == 3) {
             log("Exit Time!!");
+            getTabs().logout(); //might want to change this to switch worlds instead..
+            sleep(Calculations.random(1000,3000));
+            stop();
             onExit();
+
         }
 
 
@@ -110,8 +116,10 @@ public class Main extends AbstractScript {
     }
     public void hangoutTime(){
         long NOW_TIME = System.currentTimeMillis(); //sets nowTime
-        if(NOW_TIME - START_TIME >= 2748000 + Calculations.random(-1000, 1000)) { //We've been standing in lumby for longer than 4 mins = 2748000 + Calculations.random(-1000, 1000)
+        if(NOW_TIME - START_TIME >= 2748000 + Calculations.random(-1000, 1000)) { //2748000We
+            // 've been standing in lumby for longer than 4 mins = 2748000 + Calculations.random(-1000, 1000)
             getTabs().logout(); //might want to change this to switch worlds instead..
+            sleep(Calculations.random(500,1000));
             State = 3; //update state
         } else {
             goHangOut();
@@ -131,10 +139,11 @@ public class Main extends AbstractScript {
                         sleep(Calculations.random(3000, 10000));
                     }
                 } else if (fishingSpot != null) {
-                    if(fishingSpot.interact("Small Net")){
+                    if(fishingSpot.interact("Bait")){
                         getMouse().move(new Point(Calculations.random(0, 765), Calculations.random(0, 503))); //anti-ban
-                        int countFish = getInventory().count("Raw shrimps");
-                        sleepUntil(() -> getInventory().count("Raw shrimps") > countFish, Calculations.random(12000, 16000));
+                        int countHerring = getInventory().count("Raw herring");
+                        int countSardine = getInventory().count("Raw sardine");
+                        sleepUntil(() -> getInventory().count("Raw herring") > countHerring || getInventory().count("Raw sardine") > countSardine, Calculations.random(12000, 16000));
                         sleep(Calculations.random(1000, 3000));
                     }
 
@@ -153,10 +162,10 @@ public class Main extends AbstractScript {
 
     public void finishFishing() {
         log("finishingFishing");
-        if(getInventory().count("Raw shrimps") > 0) {
+        if(getInventory().count("Raw herring") > 0 || getInventory().count("Raw sardine") > 0) {
             sellFishing();
         }
-        if(getInventory().count("Raw shrimps") == 0) {
+        if(getInventory().count("Raw herring") == 0 && getInventory().count("Raw sardine") == 0) {
             State = 1; //update state
         }
     }
@@ -171,7 +180,9 @@ public class Main extends AbstractScript {
                 sleepUntil(() -> getShop().isOpen(), Calculations.random(2000, 5500));
                 if (getShop().isOpen()) {
                     log("Shop Opened!! ");
-                    getShop().sellFifty(317);
+                    getShop().sellFifty(345);
+                    sleep(Calculations.random(100,500));
+                    getShop().sellFifty(327);
                     log("Sold Fish");
                     if (sleepUntil(() -> !getInventory().isFull(), Calculations.random(3500, 6500))) {
                         if (getShop().close()) {
@@ -191,10 +202,10 @@ public class Main extends AbstractScript {
         getMouse().move(new Point(Calculations.random(0, 765), Calculations.random(0, 503))); //antiban
         log("ANTIBAN: moving mouse to random area");
         if(!getInventory().isFull()) {
-            if(woodCuttingTreeArea.contains(getLocalPlayer())) {
-                GameObject tree = getGameObjects().closest(gameObject -> gameObject != null && gameObject.getName().equals("Tree"));
+            if(woodCuttingTreeArea_Oaks.contains(getLocalPlayer())) {
+                GameObject tree = getGameObjects().closest(gameObject -> gameObject != null && gameObject.getName().equals("Oak"));
                 if (Calculations.random(0, 1000) == 7) {//antiban
-                    getCamera().rotateToEntity(getGameObjects().all(gameObject -> gameObject != null && gameObject.getName().equals("Tree")).get(1));
+                    getCamera().rotateToEntity(getGameObjects().all(gameObject -> gameObject != null && gameObject.getName().equals("Oak")).get(1));
                     log("ANTIBAN: Turned camera to another entity");
 
                     log("ANTIBAN: Running to another area");
@@ -204,12 +215,12 @@ public class Main extends AbstractScript {
                     }
                 } else if (tree != null && tree.interact("Chop down")) {
                     getMouse().move(new Point(Calculations.random(0, 765), Calculations.random(0, 503))); //antiban
-                    int countLog = getInventory().count("Logs");
-                    sleepUntil(() -> getInventory().count("Logs") > countLog, Calculations.random(12000, 16000));
+                    int countLog = getInventory().count("Oak logs");
+                    sleepUntil(() -> getInventory().count("Oak logs") > countLog, Calculations.random(12000, 16000));
                     sleep(Calculations.random(1000, 3000));
                 }
             } else {
-                if(getWalking().walk(woodCuttingTreeArea.getRandomTile())) {
+                if(getWalking().walk(woodCuttingTreeArea_Oaks.getRandomTile())) {
                     sleep(Calculations.random(3000, 5500));
                 }
             }
@@ -219,10 +230,10 @@ public class Main extends AbstractScript {
         }
     }
     public void finishWoodCutting() {
-        if(getInventory().count("Logs") > 0) {
+        if(getInventory().count("Oak Logs") > 0) {
             sellWoodCutting();
         }
-        if(getInventory().count("Logs") == 0){
+        if(getInventory().count("Oak Logs") == 0){
             State = 2; //update state
         }
     }
@@ -235,8 +246,8 @@ public class Main extends AbstractScript {
                 sleepUntil(() -> getShop().isOpen(), Calculations.random(2000, 5500));
                 if(getShop().isOpen()) {
                     log("Shop Opened!!");
-                    getShop().sellFifty(1511);
-                    log("Sold Logs");
+                    getShop().sellFifty(1521);
+                    log("Sold Oak Logs");
                     if(sleepUntil(() -> !getInventory().isFull(), Calculations.random(3500, 6500))) {
                         if (getShop().close()) {
                             sleepUntil(() -> !getShop().isOpen(), Calculations.random(5000, 7000));
