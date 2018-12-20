@@ -17,7 +17,7 @@ import java.awt.*;
         name = "[PASH] Fishing & Woodcutting Bot (Robust Anti-ban and Anti-mod)",
         author = "PASH",
         version = 1.0,
-        description = "Alternating activities every 20ish minutes is a good call to avoid ban detection. This script cooks for 20 Min, then cuts wood for 20 min, then breaks on Lumbridge Bridge for 4 minutes before log out. All with anti-ban. Recommend taking a 20-60 minute break before running script again.")
+        description = "Alternating activities every 20ish minutes is a good call to avoid ban detection. This script fishes Shrimps for 20 Min, then cuts Trees for 20 min, then breaks on Lumbridge Bridge for 4 minutes before log out. All with robust anti-ban and anti-mod. Recommend taking a 20-60 minute break before running script again.")
 public class Main extends AbstractScript {
     // Declare anti-ban instance
     private ZenAntiBan antiban;
