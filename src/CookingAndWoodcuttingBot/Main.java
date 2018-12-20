@@ -14,7 +14,7 @@ import java.awt.*;
 
 @ScriptManifest(
         category = Category.MISC,
-        name = "[PASH] Cooking & Fishing Bot (WITH ROBUST ANTI BAN)",
+        name = "[PASH] Cooking & Fishing Bot (Robust Anti-ban and Anti-mod)",
         author = "PASH",
         version = 1.0,
         description = "Alternating activities every 20ish minutes is a good call to avoid ban detection. This script cooks for 20 Min, then cuts wood for 20 min, then breaks on Lumbridge Bridge for 4 minutes before log out. All with anti-ban. Recommend taking a 20-60 minute break before running script again.")
