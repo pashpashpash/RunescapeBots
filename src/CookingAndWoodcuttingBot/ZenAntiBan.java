@@ -27,7 +27,7 @@ import java.net.URLConnection;
  * @author Zenarchist
  */
 public class ZenAntiBan {
-    public int ANTIBAN_RATE = 50; // This is the frequency rate for anti-ban actions (in % terms - 100% = frequent, 0% = never
+    public int ANTIBAN_RATE = 65; // This is the frequency rate for anti-ban actions (in % terms - 100% = frequent, 0% = never
     public int MIN_WAIT_NO_ACTION = 50; // This is the minimum time to wait if no action was taken
     public int MAX_WAIT_NO_ACTION = 100; // This is the maximum time to wait if no action was taken
     private AbstractScript s; // Script

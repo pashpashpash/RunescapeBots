@@ -23,6 +23,7 @@ public class Main extends AbstractScript {
     private ZenAntiBan antiban;
     private int State = 0;
     private long START_TIME = 0L; // Time the script was started
+    private long NOW_TIME_CACHED = 0L;
 
     //Fishing areas
     Area fishingStoreArea = new Area(2947, 3217, 2949, 3214, 0);
@@ -45,6 +46,8 @@ public class Main extends AbstractScript {
         antiban = new ZenAntiBan(this);
         START_TIME = System.currentTimeMillis(); //sets startTime
         log("START TIME : " + START_TIME);
+        NOW_TIME_CACHED = System.currentTimeMillis(); //sets nowTimeCached
+
     }
 
     @Override
@@ -94,7 +97,13 @@ public class Main extends AbstractScript {
     @Override
     // Draw anti-ban info to the screen
     public void onPaint(Graphics g) {
-        g.drawString("Anti-Ban Status: " + (antiban.getStatus().equals("") ? "Inactive" : antiban.getStatus()), 10, 100);
+        g.drawString("Anti-Ban Status: " + (antiban.getStatus().equals("") ? "Inactive" : antiban.getStatus()), 10, 200);
+        if(Calculations.random(1,100)==7){
+            NOW_TIME_CACHED = System.currentTimeMillis();
+        }
+        double numMinutes = Math.round((((NOW_TIME_CACHED - START_TIME)/1000)/60)*10)/10.0;
+
+        g.drawString("Script has been running for: " + numMinutes + " minutes.", 10, 100);
     }
     public void fishingTime(){
         long NOW_TIME = System.currentTimeMillis(); //sets nowTime
@@ -143,7 +152,11 @@ public class Main extends AbstractScript {
                         getMouse().move(new Point(Calculations.random(0, 765), Calculations.random(0, 503))); //anti-ban
                         int countHerring = getInventory().count("Raw herring");
                         int countSardine = getInventory().count("Raw sardine");
-                        sleepUntil(() -> getInventory().count("Raw herring") > countHerring || getInventory().count("Raw sardine") > countSardine, Calculations.random(12000, 16000));
+                        if(Calculations.random(0, 27)==7) {
+                            sleepUntil(() -> getInventory().count("Raw herring") > countHerring || getInventory().count("Raw sardine") > countSardine, Calculations.random(12000, 16000));
+                        }
+                        sleepUntil(() -> !getLocalPlayer().isAnimating(), Calculations.random(12000, 16000));
+
                         sleep(Calculations.random(1000, 3000));
                     }
 
@@ -216,7 +229,10 @@ public class Main extends AbstractScript {
                 } else if (tree != null && tree.interact("Chop down")) {
                     getMouse().move(new Point(Calculations.random(0, 765), Calculations.random(0, 503))); //antiban
                     int countLog = getInventory().count("Oak logs");
-                    sleepUntil(() -> getInventory().count("Oak logs") > countLog, Calculations.random(12000, 16000));
+                    if(Calculations.random(0, 27) == 7) {
+                        sleepUntil(() -> getInventory().count("Oak logs") > countLog, Calculations.random(12000, 16000));
+                    }
+                    sleepUntil(() -> !getLocalPlayer().isAnimating(), Calculations.random(12000, 16000));
                     sleep(Calculations.random(1000, 3000));
                 }
             } else {
@@ -251,6 +267,10 @@ public class Main extends AbstractScript {
                     if(sleepUntil(() -> !getInventory().isFull(), Calculations.random(3500, 6500))) {
                         if (getShop().close()) {
                             sleepUntil(() -> !getShop().isOpen(), Calculations.random(5000, 7000));
+                            if(getInventory().count("Oak Logs") > 0) { //store is full, switch worlds
+                                getWorldHopper().hopWorld(getWorlds().getRandomWorld(w -> w != null && w.isF2P() && w.getMinimumLevel() < 100));
+                                sleep(Calculations.random(8000, 14000));
+                            }
                         }
                     }
                 }
@@ -275,10 +295,9 @@ public class Main extends AbstractScript {
 
     public void checkForMods() {
         if (!getPlayers().all(f -> f != null && f.getName().contains("Mod")).isEmpty()) {
-            log("We just found a JMod! Logged out, quickly... Time: " + System.currentTimeMillis());
-            getTabs().logout(); //might want to change this to switch worlds instead..
-            stop();
-            onExit();
+            log("We just found a JMod! Switched worlds, quickly... Time: " + System.currentTimeMillis());
+            getWorldHopper().hopWorld(getWorlds().getRandomWorld(w -> w != null && w.isF2P() && w.getMinimumLevel() < 100));
+            sleep(Calculations.random(8000, 14000));
         }
     }
 
