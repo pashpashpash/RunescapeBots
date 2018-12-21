@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e986c0a8-c870-4a08-9808-53da8ecfd84a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SomeScript/CookingAndWoodcuttingBot/Main.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CookingAndWoodcuttingBot/Main.java" afterPath="$PROJECT_DIR$/src/CookingAndWoodcuttingBot/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CookingAndWoodcuttingBot/ZenAntiBan.java" afterPath="$PROJECT_DIR$/src/CookingAndWoodcuttingBot/ZenAntiBan.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CookingAndWoodcuttingBot/Main.java" afterPath="$PROJECT_DIR$/src/FishingAndWoodcuttingBot/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CookingAndWoodcuttingBot/ZenAntiBan.java" afterPath="$PROJECT_DIR$/src/FishingAndWoodcuttingBot/ZenAntiBan.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,10 +16,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/CookingAndWoodcuttingBot/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/FishingAndWoodcuttingBot/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="234" column="54" lean-forward="false" selection-start-line="234" selection-start-column="54" selection-end-line="234" selection-end-column="54" />
+            <state relative-caret-position="365">
+              <caret line="248" column="50" lean-forward="true" selection-start-line="248" selection-start-column="50" selection-end-line="248" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -29,7 +28,7 @@
         </entry>
       </file>
       <file leaf-file-name="ZenAntiBan.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CookingAndWoodcuttingBot/ZenAntiBan.java">
+        <entry file="file://$PROJECT_DIR$/src/FishingAndWoodcuttingBot/ZenAntiBan.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-7569">
               <caret line="115" column="33" lean-forward="true" selection-start-line="115" selection-start-column="33" selection-end-line="115" selection-end-column="33" />
@@ -99,6 +98,7 @@
         <option value="$PROJECT_DIR$/src/WillowCutter/Main.java" />
         <option value="$PROJECT_DIR$/src/CookingAndWoodcuttingBot/ZenAntiBan.java" />
         <option value="$PROJECT_DIR$/src/CookingAndWoodcuttingBot/Main.java" />
+        <option value="$PROJECT_DIR$/src/FishingAndWoodcuttingBot/Main.java" />
       </list>
     </option>
   </component>
@@ -175,7 +175,7 @@
               <item name="RunescapeBots" type="b2602c69:ProjectViewProjectNode" />
               <item name="RunescapeBots" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="CookingAndWoodcuttingBot" type="462c0819:PsiDirectoryNode" />
+              <item name="FishingAndWoodcuttingBot" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RunescapeBots" type="b2602c69:ProjectViewProjectNode" />
@@ -517,12 +517,12 @@
       <workItem from="1545183928471" duration="1603000" />
       <workItem from="1545185769836" duration="480000" />
       <workItem from="1545187587892" duration="2487000" />
-      <workItem from="1545198356290" duration="21534000" />
+      <workItem from="1545198356290" duration="21671000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44917000" />
+    <option name="totallyTimeSpent" value="45054000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1436" height="877" extended-state="0" />
@@ -726,7 +726,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CookingAndWoodcuttingBot/ZenAntiBan.java">
+    <entry file="file://$PROJECT_DIR$/src/FishingAndWoodcuttingBot/ZenAntiBan.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7569">
           <caret line="115" column="33" lean-forward="true" selection-start-line="115" selection-start-column="33" selection-end-line="115" selection-end-column="33" />
@@ -734,10 +734,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CookingAndWoodcuttingBot/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/FishingAndWoodcuttingBot/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="234" column="54" lean-forward="false" selection-start-line="234" selection-start-column="54" selection-end-line="234" selection-end-column="54" />
+        <state relative-caret-position="365">
+          <caret line="248" column="50" lean-forward="true" selection-start-line="248" selection-start-column="50" selection-end-line="248" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

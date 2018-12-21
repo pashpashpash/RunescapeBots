@@ -1,4 +1,4 @@
-package CookingAndWoodcuttingBot;//package ZenTester;
+package FishingAndWoodcuttingBot;//package ZenTester;
 
 import AntibanTemplate.ZenAntiBan;
 import org.dreambot.api.script.AbstractScript;

@@ -1,4 +1,4 @@
-package CookingAndWoodcuttingBot;
+package FishingAndWoodcuttingBot;
 
 import org.dreambot.api.methods.Calculations;
 import org.dreambot.api.methods.map.Area;
