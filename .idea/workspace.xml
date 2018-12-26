@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e986c0a8-c870-4a08-9808-53da8ecfd84a" name="Default" comment="" />
+    <list default="true" id="e986c0a8-c870-4a08-9808-53da8ecfd84a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FishingAndWoodcuttingBot/Main.java" afterPath="$PROJECT_DIR$/src/FishingAndWoodcuttingBot/Main.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,8 +17,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FishingAndWoodcuttingBot/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+            <state relative-caret-position="170">
+              <caret line="146" column="30" lean-forward="false" selection-start-line="146" selection-start-column="30" selection-end-line="146" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,7 +71,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>state</find>
       <find>finishFi</find>
       <find>State</find>
       <find>LENGTH</find>
@@ -99,6 +100,7 @@
       <find>State =</find>
       <find>yew</find>
       <find>doWood</find>
+      <find>FISHING_LENGTH</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -572,12 +574,12 @@
       <workItem from="1545185769836" duration="480000" />
       <workItem from="1545187587892" duration="2487000" />
       <workItem from="1545198356290" duration="24003000" />
-      <workItem from="1545444050218" duration="57547000" />
+      <workItem from="1545444050218" duration="58381000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104933000" />
+    <option name="totallyTimeSpent" value="105767000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1436" height="877" extended-state="0" />
@@ -927,8 +929,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FishingAndWoodcuttingBot/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+        <state relative-caret-position="170">
+          <caret line="146" column="30" lean-forward="false" selection-start-line="146" selection-start-column="30" selection-end-line="146" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

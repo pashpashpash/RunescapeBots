@@ -19,7 +19,8 @@ Tree Options Supported: Trees, Oaks, Willows, Yews
 If you’d like to check out the code, here it is!
 
 Feature List
-Sexy, easy to understand script config UI
+
+* Sexy, easy to understand script config UI
 * 1-99 Fishing, banking or selling at store (& world hopping if store limit reached)
 * Supports Karamja for lobster fishing
 * 1-99 Woodcutting, banking or selling at store (& world hopping if store limit reached)

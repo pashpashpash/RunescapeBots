@@ -143,8 +143,8 @@ public class Main extends AbstractScript {
         log("START TIME : " + START_TIME);
         NOW_TIME_CACHED = System.currentTimeMillis(); //sets nowTimeCached
 
-        FISHING_LENGTH = 1920000 + Calculations.random(-300000, 300000); // 32 min +/-5 minutes
-        WOODCUTTING_LENGTH = 1920000 + Calculations.random(-300000, 300000);
+        FISHING_LENGTH = 3840000 + Calculations.random(-300000, 300000); // 32 min +/-5 minutes
+        WOODCUTTING_LENGTH = 3840000 + Calculations.random(-300000, 300000);
         CHILLING_LENGTH = 420000 + Calculations.random(-60000, 60000); // 7 min +/-1 minute
         if(chillingSpot.equals("lumbridge")) {
             hangoutArea = lumbridge;
