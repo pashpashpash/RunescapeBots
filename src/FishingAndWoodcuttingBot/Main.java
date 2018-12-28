@@ -27,8 +27,8 @@ import java.io.IOException;
         category = Category.MISC,
         name = "[PASH] Fishing & WC Hybrid [SAFE]",
         author = "PASH",
-        version = 1.0,
-        description = "Alternates between fishing, woodcutting, and hanging out in Lumbridge.")
+        version = 2.0,
+        description = "Alternates between fishing, woodcutting, and hanging out in Lumbridge/Falador.")
 public class Main extends AbstractScript {
     // Declare anti-ban instance
     private ZenAntiBan antiban;
@@ -136,7 +136,7 @@ public class Main extends AbstractScript {
     public void onStart() {
         startingMenu();
 
-        log("Starting script! " + fishingType + " | " + woodCuttingType);
+        log("Starting script ! " + fishingType + " | " + woodCuttingType);
         // Initialize anti-ban instance
         antiban = new ZenAntiBan(this);
         START_TIME = System.currentTimeMillis(); //sets startTime
