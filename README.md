@@ -58,4 +58,4 @@ Cuts Willow trees south of Rimmington and sells them to the general store nearby
 ## [Yew Cutting](https://github.com/pashpashpash/RunescapeBots/tree/master/src/YewCutter) Bot
 Cuts Yews next to the Grand Exchange.
 
-WARNING : After exploit-test-botting for 24 hours straight, I got banned while using the YewCutting script. Use at your own risk.
+WARNING : After exploit-test-botting for 24 hours straight, I got banned while using the YewCutting script. Use at your own risk, stay safe.
