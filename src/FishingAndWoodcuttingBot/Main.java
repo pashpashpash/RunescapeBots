@@ -140,7 +140,7 @@ public class Main extends AbstractScript {
         // Initialize anti-ban instance
         antiban = new ZenAntiBan(this);
         START_TIME = System.currentTimeMillis(); //sets startTime
-        log("START TIME : " + START_TIME);
+        log("START TIME :  " + START_TIME);
         NOW_TIME_CACHED = System.currentTimeMillis(); //sets nowTimeCached
 
         FISHING_LENGTH = 3840000 + Calculations.random(-300000, 300000); // 32 min +/-5 minutes
