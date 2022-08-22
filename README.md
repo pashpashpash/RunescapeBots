@@ -53,7 +53,7 @@ Cuts Oak trees near Draynor Village and deposits them to the bank nearby.
 ##  [Willow Cutting](https://github.com/pashpashpash/RunescapeBots/tree/master/src/WillowCutter) Bot
 Cuts Willow trees south of Rimmington and sells them to the general store nearby.
 
-![ ](/WillowCutter.PNG)
+![ ](https://user-images.githubusercontent.com/20898225/185938695-b8e320d1-1d9d-4cd6-881e-854cae3a52ba.png)
 
 ## [Yew Cutting](https://github.com/pashpashpash/RunescapeBots/tree/master/src/YewCutter) Bot
 Cuts Yews next to the Grand Exchange.
