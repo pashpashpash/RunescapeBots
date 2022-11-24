@@ -1,7 +1,7 @@
 # Old School Runescape bots built using Dreambot client APIs.
 To run any of these bots, please make sure you have the latest version of the [Dreambot](https://dreambot.org/) client running.
 If you're new to RS Botting or have any suggestions, feel free to tweet me [@pashmerepat](https://twitter.com/pashmerepat).
-Some of you asked to add pre-compiled versions that you can directly run in Dreambot, you can find them all in the [/ExportedScripts](https://github.com/pashpashpash/RunescapeBots/tree/master/ExportedScripts) folder. If you'd like to buy [OSRS gold](https://www.playerauctions.com/osrs-gold/), I am sponsored by PlayerAuctions.
+Some of you asked to add pre-compiled versions that you can directly run in Dreambot, you can find them all in the [/ExportedScripts](https://github.com/pashpashpash/RunescapeBots/tree/master/ExportedScripts) folder. If you'd like to buy [OSRS gold](https://www.playerauctions.com/osrs-gold/), check out PlayerAuctions.
 
 
 ## [Fishing & Woodcutting](https://github.com/pashpashpash/RunescapeBots/tree/master/src/FishingAndWoodcuttingBot) Bot
